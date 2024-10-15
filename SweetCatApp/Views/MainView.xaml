@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:translations="clr-namespace:SweetCatApp.Resources"
              x:Class="SweetCatApp.MainPage"
-             BackgroundColor="{StaticResource Primary}">
+            >
 
     <ScrollView>
         <VerticalStackLayout
@@ -18,7 +18,6 @@
             
             <Button
                 x:Name="OpenCalculatorBtn"
-                Background="#FFA500"
                 Text="{x:Static translations:Strings.Pets_Profil_Text_Button}" 
                Command="{Binding NavigateToPetProfiles}"
                 HorizontalOptions="Fill" />
