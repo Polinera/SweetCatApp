@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:translations="clr-namespace:SweetCatApp.Resources"
+             x:Class="SweetCatApp.MainPage"
+             BackgroundColor="{StaticResource Primary}">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+            <Label
+                Text="{x:Static translations:Strings.welcomeText}"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            
+            <Button
+                x:Name="OpenCalculatorBtn"
+                Background="#FFA500"
+                Text="{x:Static translations:Strings.Pets_Profil_Text_Button}" 
+               Command="{Binding NavigateToPetProfiles}"
+                HorizontalOptions="Fill" />
+            <Button
+                x:Name="OpenRacesDictionaryBtn"
+                Text="Races" 
+               Command="{Binding NavigateToRaces}"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
