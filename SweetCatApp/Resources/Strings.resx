@@ -105,4 +105,13 @@
 	<data name="Pets_Profil_Text_Button" xml:space="preserve">
 	<value>Your Pets profile </value>
   </data>
+	<data name="Bengal_Text_Label" xml:space="preserve">
+	<value>Bengal Cat</value>
+  </data>
+	<data name="Brithis_Blue_Text_Label" xml:space="preserve">
+	<value>British Shorthair</value>
+  </data>
+	<data name="Mainecoon_Text_Label" xml:space="preserve">
+	<value>Mainecoon</value>
+  </data>
 </root>

@@ -22,6 +22,10 @@
     <Color x:Key="ActionButtonLight">#00BFA6</Color>
     <Color x:Key="ActionButtonDark">#00897B</Color>
 
+    <Color x:Key="FrameBackgroundLight">#F5F5DC</Color>
+    <Color x:Key="FrameBackgroundDark">#4B4B4B</Color>
+    <Color x:Key="FrameBorderLight">#F5F5DC</Color>
+    <Color x:Key="FrameBorderDark">#5A2D12</Color>
 
 
     <Color x:Key="Primary">#A7C7E7</Color>

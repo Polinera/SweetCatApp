@@ -61,6 +61,33 @@ namespace SweetCatApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bengal Cat.
+        /// </summary>
+        internal static string Bengal_Text_Label {
+            get {
+                return ResourceManager.GetString("Bengal_Text_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to British Shorthair.
+        /// </summary>
+        internal static string Brithis_Blue_Text_Label {
+            get {
+                return ResourceManager.GetString("Brithis_Blue_Text_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mainecoon.
+        /// </summary>
+        internal static string Mainecoon_Text_Label {
+            get {
+                return ResourceManager.GetString("Mainecoon_Text_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Your Pets profile .
         /// </summary>
         internal static string Pets_Profil_Text_Button {

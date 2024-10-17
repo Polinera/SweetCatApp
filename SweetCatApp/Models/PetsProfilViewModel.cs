@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace SweetCatApp.Models
 {
-    class PetsProfilViewModel
+    public class PetsProfilViewModel
     {
 
         

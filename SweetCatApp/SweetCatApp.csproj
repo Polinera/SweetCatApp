@@ -22,7 +22,7 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Display name -->
-		<ApplicationTitle>SweetCatApp</ApplicationTitle>
+		<ApplicationTitle>SweetCat</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.sweetcatapp</ApplicationId>
@@ -41,7 +41,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -50,7 +50,15 @@
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
 		<MauiImage Update="Resources\Images\profile_icon_light.png" Resize="True" BaseSize="300,185" />
-
+				<MauiImage Update="Resources\Images\profile_big_icon_light.png" Resize="True" BaseSize="300,185" />
+		<MauiImage Update="Resources\Images\profile_ball_icon_light.png" Resize="True" BaseSize="300,185" />
+<MauiImage Update="Resources\Images\profile_ball_icon_light.png" Resize="True" BaseSize="300,185" />
+		<MauiImage Update="Resources\Images\bengal_image.png" Resize="True" BaseSize="300,185" />
+		<MauiImage Update="Resources\Images\mainecoon_image.jpg" Resize="True" BaseSize="300,185" />
+			<MauiImage Update="Resources\Images\brithis_blue_image.jpg" Resize="True" BaseSize="300,185" />
+		
+			
+		
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
 
@@ -58,8 +66,19 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
-	
+	<ItemGroup>
+	  <None Remove="Resources\Assets\bengal_description.txt" />
+	  <None Remove="Resources\Assets\brithis_description.txt" />
+	  <None Remove="Resources\Assets\mainecoon_description.txt" />
+	</ItemGroup>
 
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Assets\bengal_description.txt" />
+	  <EmbeddedResource Include="Resources\Assets\brithis_description.txt" />
+	  <EmbeddedResource Include="Resources\Assets\mainecoon_description.txt" />
+	</ItemGroup>
+
+	
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
@@ -82,10 +101,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\CalculatorView.xaml">
+	  <MauiXaml Update="Views\CatsDictionaryView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\CatsDictionaryView.xaml">
+	  <MauiXaml Update="Views\DetailedCatView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\PetsProfilView.xaml">
