@@ -114,4 +114,13 @@
 	<data name="Mainecoon_Text_Label" xml:space="preserve">
 	<value>Mainecoon</value>
   </data>
+	<data name="Add_Profile_Text_Button" xml:space="preserve">
+	<value>Dodaj Profil</value>
+  </data>
+	<data name="Edit_Profile_Text_Button" xml:space="preserve">
+	<value>Edytuj Profil</value>
+  </data>
+	<data name="Title_Text_Picker" xml:space="preserve">
+	<value>Wybierz</value>
+  </data>
 </root>

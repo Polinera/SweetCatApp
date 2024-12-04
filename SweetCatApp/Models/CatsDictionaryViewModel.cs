@@ -40,7 +40,7 @@ namespace SweetCatApp.Models
             var bengalDescription = LoadDescriptionFromFile("bengal_description.txt");
             var bengalCat = new Animal()
             {
-                Name = "Bengal",
+                Name = Resources.Strings.Bengal_Text_Label,
                 Image = "bengal_image.png",
                 Description = bengalDescription
             };
@@ -52,7 +52,7 @@ namespace SweetCatApp.Models
             var bengalDescription = LoadDescriptionFromFile("mainecoon_description.txt");
             var mainecoonCat = new Animal()
             {
-                Name = "Mainecoon",
+                Name = Resources.Strings.Mainecoon_Text_Label,
                 Image = "mainecoon_image.png",
                 Description = bengalDescription
             };
@@ -64,7 +64,7 @@ namespace SweetCatApp.Models
 
             var britishCat = new Animal()
             {
-                Name = "British shorthair",
+                Name = Resources.Strings.Brithis_Blue_Text_Label,
                 Image = "brithis_blue_image.png",
                 Description = britishDescription
             };

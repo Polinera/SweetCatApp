@@ -61,6 +61,15 @@ namespace SweetCatApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dodaj Profil.
+        /// </summary>
+        internal static string Add_Profile_Text_Button {
+            get {
+                return ResourceManager.GetString("Add_Profile_Text_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bengal Cat.
         /// </summary>
         internal static string Bengal_Text_Label {
@@ -79,6 +88,15 @@ namespace SweetCatApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edytuj Profil.
+        /// </summary>
+        internal static string Edit_Profile_Text_Button {
+            get {
+                return ResourceManager.GetString("Edit_Profile_Text_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mainecoon.
         /// </summary>
         internal static string Mainecoon_Text_Label {
@@ -93,6 +111,15 @@ namespace SweetCatApp.Resources {
         internal static string Pets_Profil_Text_Button {
             get {
                 return ResourceManager.GetString("Pets_Profil_Text_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wybierz.
+        /// </summary>
+        internal static string Title_Text_Picker {
+            get {
+                return ResourceManager.GetString("Title_Text_Picker", resourceCulture);
             }
         }
         

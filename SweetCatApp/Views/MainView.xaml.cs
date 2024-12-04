@@ -7,7 +7,6 @@ namespace SweetCatApp
     public partial class MainPage : ContentPage
     {
       
-
         public MainPage()
         {
             InitializeComponent();

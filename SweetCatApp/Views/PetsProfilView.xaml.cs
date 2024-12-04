@@ -9,6 +9,7 @@ public partial class PetsProfilView : ContentPage
 	{
 		InitializeComponent();
 		BindingContext = new PetsProfilViewModel();
+		
 	}
     
 }

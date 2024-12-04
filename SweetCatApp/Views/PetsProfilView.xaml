@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:translations="clr-namespace:SweetCatApp.Resources"
              x:Class="SweetCatApp.Views.PetsProfilView"
             >
    
      
-    <VerticalStackLayout>
-       
-        
+    <VerticalStackLayout
+        Padding="20">
         <Label 
             Text="Pet Profil View"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Frame WidthRequest="150" HeightRequest="150"
+        <Frame 
+            Margin="10,0,0,0"
+            WidthRequest="150" HeightRequest="150"
                CornerRadius="100" 
                HasShadow="False" 
                Padding="0"
@@ -20,7 +22,18 @@
             <Image Source="profile_icon_light.png"
                    Aspect="AspectFill" />
         </Frame>
+        <Button
+                x:Name="OpenAddPetBtn"
+            Margin="10"
+                Text="{x:Static translations:Strings.Add_Profile_Text_Button}" 
+               Command="{Binding NavigateToAddPetProfiles}"
+                HorizontalOptions="Fill" />
+        <Button
+                x:Name="OpenEditPetBtn"
+            Margin="10"
+                Text="{x:Static translations:Strings.Edit_Profile_Text_Button}"
+               Command="{Binding NavigateToEditPetProfiles}"
+                HorizontalOptions="Fill" />
 
-       
     </VerticalStackLayout>
 </ContentPage>

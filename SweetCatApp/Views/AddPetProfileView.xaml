@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SweetCatApp.Views.AddPetProfileView"
+             xmlns:translations="clr-namespace:SweetCatApp.Resources"
+             Title="AddPetProfileView">
+    <VerticalStackLayout Padding="25"
+                         Spacing="20">
+
+        <Frame BackgroundColor="Pink" 
+                   CornerRadius="100" 
+                   WidthRequest="150" 
+                   HeightRequest="150" 
+                   HorizontalOptions="Center" 
+                   Padding="0">
+            <Image Source="Resources/Images/profile_ball_icon_light.png" />
+        </Frame>
+        <Label Text="Dotknij, żeby zmienić zdjęcie profilowe" HorizontalOptions="Center" />
+
+        <Label Text="Uzupełnij dane profilu" />
+
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="10">
+            <StackLayout Spacing="10">
+                <Entry  x:Name="NameEntry" Placeholder="ProfileName"/>
+                <Label  Text="Wybierz płeć"/>
+
+                <Picker x:Name="SexPicker" 
+                Title="{x:Static translations:Strings.Title_Text_Picker}"
+                ItemsSource="{Binding Items}"
+        SelectedItem="{Binding SelectedItem}" />
+                <Label Text="Krotki opis"/>
+
+                <Entry x:Name="DescriptionEntry" Placeholder="ProfileDescription" />
+                
+
+            </StackLayout>
+        
+            
+        </Frame>
+
+
+        
+
+    </VerticalStackLayout>
+</ContentPage>
