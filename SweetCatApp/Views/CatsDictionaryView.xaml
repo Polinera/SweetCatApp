@@ -4,8 +4,8 @@
              xmlns:local="clr-namespace:SweetCatApp.Models"
               xmlns:shared="clr-namespace:SweetCatApp.Views.Shared"
              x:Class="SweetCatApp.Views.CatsDictionaryView"
-             xmlns:translations="clr-namespace:SweetCatApp.Resources"
-             >
+             xmlns:translations="clr-namespace:SweetCatApp.Resources">
+    
     <StackLayout>
        
     <Grid>
@@ -14,17 +14,17 @@
             <RowDefinition Height="250" />
             <RowDefinition Height="250" />
         </Grid.RowDefinitions>
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Frame WidthRequest="150" HeightRequest="150"
-               CornerRadius="100" 
-               HasShadow="True" 
-               Padding="0"
-               BackgroundColor="Transparent">
+
+            <Frame Style="{StaticResource ProfilFrameStyle}">
+                
             <Image Source="bengal_image.png"
                    Aspect="AspectFill" />
+                
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding NavigateToBengalView}" />
             </Frame.GestureRecognizers>
@@ -34,15 +34,14 @@
         <Label Text="{x:Static translations:Strings.Bengal_Text_Label}"
                HorizontalOptions="Center"
                VerticalOptions="End" />
-       
 
-        <Frame Grid.Column="1" WidthRequest="150" HeightRequest="150"
-               CornerRadius="100" 
-               HasShadow="False" 
-               Padding="0"
-               BackgroundColor="Transparent">
+
+            <Frame Style="{StaticResource ProfilFrameStyle}"
+                   Grid.Column="1">
+                
             <Image Source="brithis_blue_image.png"
                    Aspect="AspectFill" />
+                
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding NavigateToBritishShorthairView}" />
             </Frame.GestureRecognizers>
@@ -52,13 +51,13 @@
                Text="{x:Static translations:Strings.Brithis_Blue_Text_Label}"
                HorizontalOptions="Center"
                VerticalOptions="End" />
-        <Frame Grid.Row="1" WidthRequest="150" HeightRequest="150"
-               CornerRadius="100" 
-               HasShadow="False" 
-               Padding="0"
-               BackgroundColor="Transparent">
+
+            <Frame Style="{StaticResource ProfilFrameStyle}"
+                   Grid.Row="1" >
+                
             <Image Source="mainecoon_image.png"
                    Aspect="AspectFill" />
+                
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding NavigateToMaineCoonView}" />
             </Frame.GestureRecognizers>
@@ -68,38 +67,36 @@
                Text="{x:Static translations:Strings.Mainecoon_Text_Label}"
                HorizontalOptions="Center"
                VerticalOptions="End" />
-        <Frame Grid.Column="1"
-               Grid.Row="1"
-               WidthRequest="150" HeightRequest="150"
-               CornerRadius="100" 
-               HasShadow="False" 
-               Padding="0"
-               BackgroundColor="Transparent">
+
+            <Frame Style="{StaticResource ProfilFrameStyle}"
+                   Grid.Column="1"
+                   Grid.Row="1">
+                
             <Image Source="profile_icon_light.png"
                    Aspect="AspectFill" />
+                
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding NavigateToMain}" />
             </Frame.GestureRecognizers>
         </Frame>
+        
         <Label Grid.Row="1"
                Grid.Column="1"
                Text="to be done"
                HorizontalOptions="Center"
                VerticalOptions="End" />
-        <Frame Grid.Column="2"
-               Grid.Row="1"
-               WidthRequest="150" HeightRequest="150"
-               CornerRadius="100" 
-               HasShadow="False" 
-               Padding="0"
-               BackgroundColor="Transparent">
-            <Image Source="profile_icon_light.png"
+
+            <Frame Style="{StaticResource ProfilFrameStyle}"
+                   Grid.Column="2"
+                   Grid.Row="1">
+
+                <Image Source="profile_icon_light.png"
                    Aspect="AspectFill" />
-            <Frame.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding NavigateToMain}" />
-            </Frame.GestureRecognizers>
-        </Frame>
-       
-    </Grid>
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateToMain}" />
+                </Frame.GestureRecognizers>
+            </Frame>
+        </Grid>
     </StackLayout>
 </ContentPage>

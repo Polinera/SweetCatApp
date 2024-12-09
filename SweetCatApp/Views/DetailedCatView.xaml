@@ -4,33 +4,25 @@
              x:Class="SweetCatApp.Views.DetailedCatView"
              >
     <ContentPage.Content>
-        <StackLayout Padding="20">
+        
+        <VerticalStackLayout>
 
-            <!-- Display the image of the animal -->
-            <Frame 
-    Padding="20"
-    CornerRadius="20"
-     HasShadow="True"
-    HeightRequest="300"
-    >
+            <Frame Style="{StaticResource DetailedCatFrameStyle}">
+
                 <Image Source="{Binding Image}"
-                 
-                   Aspect="AspectFill" >
-                    
-                </Image>
+                       Aspect="AspectFill" />
             </Frame>
-            <!-- Display the name of the animal -->
-            <Label Text="{Binding Name}"
-                   FontSize="Large"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   Margin="20" />
-            <Label Text="{Binding Description}"
-                   FontSize="Medium"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   Margin="10" />
-        </StackLayout>
+
+            <Label 
+                Style="{StaticResource DetailedCatLabelStyle}"
+                Text="{Binding Name}"
+                FontSize="Large" />
+            
+            <Label 
+                Style="{StaticResource DetailedCatLabelStyle}"
+                Text="{Binding Description}"
+                FontSize="Medium" />
+        </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>
 

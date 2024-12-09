@@ -8,15 +8,15 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
-                <!-- ContentContainer takes all available space -->
+                
                 <RowDefinition Height="Auto" />
-                <!-- Buttons at the bottom -->
+                
             </Grid.RowDefinitions>
 
-            <!-- This will be populated by the derived pages -->
+            
             <ContentView x:Name="ContentContainer" Grid.Row="0" />
 
-            <!-- TabBar or Bottom Navigation -->
+           
             <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End">
                 <Button Text="Main" Clicked="OnMainPageClicked"/>
                 <Button Text="Profile" Clicked="OnProfilePageClicked"/>

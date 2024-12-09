@@ -2,38 +2,28 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:translations="clr-namespace:SweetCatApp.Resources"
-             x:Class="SweetCatApp.Views.PetsProfilView"
-            >
-   
-     
-    <VerticalStackLayout
-        Padding="20">
+             x:Class="SweetCatApp.Views.PetsProfilView">
+
+    <VerticalStackLayout>
         <Label 
-            Text="Pet Profil View"
+            Text="{x:Static translations:Strings.PetsProfile_Text_Label}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Frame 
-            Margin="10,0,0,0"
-            WidthRequest="150" HeightRequest="150"
-               CornerRadius="100" 
-               HasShadow="False" 
-               Padding="0"
-               BackgroundColor="Transparent">
+        
+        <Frame Style="{StaticResource ProfilFrameStyle}">
             <Image Source="profile_icon_light.png"
                    Aspect="AspectFill" />
         </Frame>
+        
         <Button
                 x:Name="OpenAddPetBtn"
-            Margin="10"
                 Text="{x:Static translations:Strings.Add_Profile_Text_Button}" 
-               Command="{Binding NavigateToAddPetProfiles}"
-                HorizontalOptions="Fill" />
+               Command="{Binding NavigateToAddPetProfiles}" />
+        
         <Button
                 x:Name="OpenEditPetBtn"
-            Margin="10"
                 Text="{x:Static translations:Strings.Edit_Profile_Text_Button}"
-               Command="{Binding NavigateToEditPetProfiles}"
-                HorizontalOptions="Fill" />
+               Command="{Binding NavigateToEditPetProfiles}"/>
 
     </VerticalStackLayout>
 </ContentPage>

@@ -8,7 +8,39 @@
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
     </Style>
- 
+
+    <Style TargetType="Frame" x:Key="ProfilFrameStyle">
+        <Setter Property="CornerRadius" Value="100" />
+        <Setter Property="WidthRequest" Value="150" />
+        <Setter Property="HeightRequest" Value="150" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+    </Style>
+
+    <Style TargetType="Frame" x:Key="DetailedCatFrameStyle">
+        <Setter Property="CornerRadius" Value="20" />
+        <Setter Property="HeightRequest" Value="300" />
+        <Setter Property="HasShadow" Value="True" />
+        <Setter Property="Padding" Value="20" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="DetailedCatLabelStyle">
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="Margin" Value="15" />
+    </Style>
+
+    <Style TargetType="Frame" x:Key="AddPetProfileFrameStyle">
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource FrameBackgroundLight}, Dark={StaticResource FrameBackgroundDark}}" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="Margin" Value="15" />
+        <Setter Property="Padding" Value="15" />
+    </Style>
+
+    <Style TargetType="VerticalStackLayout">
+        <Setter Property="Padding" Value="30,0" />
+        <Setter Property="Spacing" Value="25" />
+    </Style>
 
     <Style TargetType="IndicatorView">
         <Setter Property="IndicatorColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray500}}"/>
@@ -180,6 +212,11 @@
                 </VisualStateGroup>
             </VisualStateGroupList>
         </Setter>
+    </Style>
+
+    <Style x:Key="PetProfilLabelStyles"  TargetType="Label">
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="HorizontalOptions" Value="Center" />
     </Style>
 
     <Style TargetType="Span">

@@ -70,6 +70,24 @@ namespace SweetCatApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Uzupełnij dane profilu.
+        /// </summary>
+        internal static string AddPetsProfile_FillProfil_Text_Label {
+            get {
+                return ResourceManager.GetString("AddPetsProfile_FillProfil_Text_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dotknij, żeby zmienić zdjęcie profilowe.
+        /// </summary>
+        internal static string AddPetsProfile_Photo_Text_Label {
+            get {
+                return ResourceManager.GetString("AddPetsProfile_Photo_Text_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bengal Cat.
         /// </summary>
         internal static string Bengal_Text_Label {
@@ -111,6 +129,15 @@ namespace SweetCatApp.Resources {
         internal static string Pets_Profil_Text_Button {
             get {
                 return ResourceManager.GetString("Pets_Profil_Text_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wybierz.
+        /// </summary>
+        internal static string PetsProfile_Text_Label {
+            get {
+                return ResourceManager.GetString("PetsProfile_Text_Label", resourceCulture);
             }
         }
         

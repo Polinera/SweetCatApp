@@ -2,31 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:translations="clr-namespace:SweetCatApp.Resources"
-             x:Class="SweetCatApp.MainPage"
-            >
+             x:Class="SweetCatApp.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+        <VerticalStackLayout>
             
             <Label
                 Text="{x:Static translations:Strings.welcomeText}"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
-
             
             <Button
                 x:Name="OpenCalculatorBtn"
                 Text="{x:Static translations:Strings.Pets_Profil_Text_Button}" 
-               Command="{Binding NavigateToPetProfiles}"
-                HorizontalOptions="Fill" />
+               Command="{Binding NavigateToPetProfiles}" />
+            
             <Button
                 x:Name="OpenRacesDictionaryBtn"
                 Text="Races" 
-               Command="{Binding NavigateToRaces}"
-                HorizontalOptions="Fill" />
+               Command="{Binding NavigateToRaces}" />
+            
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>

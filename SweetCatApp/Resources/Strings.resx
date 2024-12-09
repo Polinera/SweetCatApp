@@ -123,4 +123,13 @@
 	<data name="Title_Text_Picker" xml:space="preserve">
 	<value>Wybierz</value>
   </data>
+	<data name="PetsProfile_Text_Label" xml:space="preserve">
+	<value>Wybierz</value>
+  </data>
+	<data name="AddPetsProfile_Photo_Text_Label" xml:space="preserve">
+	<value>Dotknij, żeby zmienić zdjęcie profilowe</value>
+  </data>
+	<data name="AddPetsProfile_FillProfil_Text_Label" xml:space="preserve">
+	<value>Uzupełnij dane profilu</value>
+  </data>
 </root>
